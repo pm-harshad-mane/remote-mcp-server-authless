@@ -47,6 +47,9 @@ export class MyMCP extends McpAgent {
 							};
 						result = a / b;
 						break;
+					case "magic":
+						result = (a+b)*(a-b)
+						break;
 				}
 				return { content: [{ type: "text", text: String(result) }] };
 			},
